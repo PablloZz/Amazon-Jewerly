@@ -1,0 +1,1508 @@
+* {
+  box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+
+  background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat, url('../Images/kisspng-wedding-ring.png') no-repeat;
+
+  background-size: 300px 380px, 500px 400px, 750px 730px;
+  background-position: 292px 100%, 689px 100%, 900px 55%;
+  
+  background-color: #0D0D0D;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+/*Footer */
+.footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #404040;
+  width: 15%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.row-sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.foot-header {
+  font: 700;
+  font-size: 2.25rem;
+  line-height: 47px;
+  letter-spacing: 0.01em;
+  color: #E8A562;
+  width: 156px;
+}
+
+.foot-info {
+  margin-top: 2rem;
+}
+
+.foot-social {
+  padding-bottom: 1rem;
+}
+
+.foot-link {
+  margin-bottom: 40%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 31.08px;
+  letter-spacing: 0.01em;
+  color: rgba(242, 242, 242, 0.5);
+  cursor: pointer;
+}
+
+.foot-home {
+  color: #F2F2F2;
+}
+
+.social-link {
+  cursor: pointer;
+  margin-top: 100%;
+}
+
+.social-link > a {
+  color: #949494;
+}
+
+.flex-elem-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Header*/
+.header {
+  margin-left: calc(100vw - (100vw - 230px));
+  padding-top: 40px;
+  left: calc(100vw - (100vw - 230px));
+  width: calc(100vw - 230px);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-item {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#search {
+  background: #404040;
+  width: 100%;
+  height: 35px;
+  padding-left: 45px;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 129.5%;
+  letter-spacing: 0.07em;
+  color: rgba(242, 242, 242, 0.5);
+}
+
+.search {
+  position: relative;
+  width: 45%;
+}
+
+.search div {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.input-icon {
+  width: 12%;
+  height: 35px;
+  background: rgba(196, 196, 196, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-icon i {
+  color: #F2F2F2;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.head-icon {
+  color: #F2F2F2;
+  width: 25px;
+  height: 22px;
+}
+
+.btn {
+  background: #E8A562;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 129.5%;
+  letter-spacing: 0.07em;
+
+  color: #F2F2F2;
+}
+
+.login-btn {
+  width: 100px;
+  height: 35px;
+}
+
+/*Navbar*/
+.navbar {
+  width: 45%;
+  margin-left: 15%;
+}
+
+.navbar > div {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 129.5%;
+
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+
+  color: #F2F2F2;
+}
+
+.row > div {
+  cursor: pointer;
+}
+
+/*Main*/
+.main {
+  margin-left: calc(100vw - (100vw - 230px));
+  margin-top: 40px;
+  left: calc(100vw - (100vw - 230px));
+  width: calc(100vw - 230px);
+}
+
+.main-head {
+  width: 749px;
+  height: 268px;
+  margin-left: 5%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 139.5%;
+  
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  
+  color: #FFFFFF;
+}
+
+.secondary-head {
+  width: 671px;
+  height: 33px;
+  margin: -2% 0 0 5%;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 139.5%;
+
+  letter-spacing: 0.02em;
+
+  color: #F2F2F2;
+}
+
+.expl-btn {
+  width: 140px;
+  height: 40px;
+  margin: 2% 5%;
+  border-radius: 5px;
+}
+
+/* Fixed btn */
+.fixed-btn {
+  position: absolute;
+  width: 280px;
+  height: 120px;
+  right: 19%;
+  bottom: 5%;
+  text-align: left;
+  padding-left: 15px;
+  z-index: 10;
+
+  background: #404040;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 129.5%;
+
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  color: #F2F2F2;
+}
+
+.fixed-btn > span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 129.5%;
+
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  cursor: pointer;
+  color: #E8A562;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1100px){
+  .show-sidebar {
+    display: none;
+    color: #F2F2F2;
+  }
+
+  .foot-resp480,
+  .foot-resp768,
+  .foot-resp1024 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-resp-hide {
+    display: block;
+  }
+
+  .header-resp-show480,
+  .header-resp-show768,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-hide {
+    display: block;
+  }
+
+  .main480,
+  .main768,
+  .main1024 {
+    display: none;
+  }
+
+  .main-resp-hide {
+    display: block;
+  }
+
+  .main-resp-hide {
+    display: block;
+    margin-left: calc(100vw - (100vw - 20%));
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  body {
+    overflow-y: hidden;
+  }
+
+  /* Footer response */
+  .foot-resp480 {
+    display: none;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease-in;
+    z-index: 1000;
+  }
+
+  .overlay.active {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .show-sidebar {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: block;
+    color: #F2F2F2;
+    cursor: pointer;
+  }
+
+  .header,
+  .main {
+    margin-left: 5%;
+  }
+
+  .footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #404040;
+    width: 0%;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width .5s ease-in-out;
+  }
+
+  .footer.active {
+    width: 45%;
+  }
+
+  .foot-header {
+    line-height: 25px;
+  }
+
+  .foot-link {
+    line-height: 15px;
+  }
+
+  .foot-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .foot-social>div {
+    margin-right: 15%;
+  }
+
+  .foot-social>div:first-child {
+    margin-left: -15%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat, url('../Images/kisspng-wedding-ring.png') no-repeat;
+
+    background-size: 300px 380px, 500px 400px, 670px 650px;
+    background-position: 292px 100%, 620px 100%, 900px 55%;
+
+    background-color: #0D0D0D;
+  }
+
+  .foot-resp480,
+  .foot-resp768,
+  .foot-resp1024 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-resp-hide {
+    display: block;
+  }
+
+  .foot-info {
+    margin-top: 0;
+  }
+
+  .header-resp-show480,
+  .header-resp-show768,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-hide {
+    display: block;
+  }
+
+  .main480,
+  .main768,
+  .main1024 {
+    display: none;
+  }
+
+  .main-resp-hide {
+    display: block;
+  }
+
+  .main-resp-hide {
+    display: block;
+    margin-left: calc(100vw - (100vw - 20%));
+  }
+
+  .main-head {
+    height: 260px;
+    margin-left: 5%;
+
+    font-size: 2rem;
+    line-height: 125%;
+  }
+
+  .secondary-head {
+    line-height: 50%;
+    margin-top: -5%;
+  }
+
+  .expl-btn {
+    margin-top: 5%;
+  }
+
+  .fixed-btn {
+    width: 180px;
+    height: 80px;
+
+    font-size: 1rem;
+  }
+
+  .fixed-btn>span {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media screen and (max-width: 1536px) {
+
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat, url('../Images/kisspng-wedding-ring.png') no-repeat;
+
+    background-size: 200px 280px, 350px 300px, 500px 480px;
+    background-position: 292px 100%, 549px 100%, 900px 55%;
+
+    background-color: #0D0D0D;
+  }
+
+  .foot-resp480,
+  .foot-resp768,
+  .foot-resp1024 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-resp-hide {
+    display: block;
+  }
+
+  .foot-info {
+    margin-top: 0;
+  }
+
+  .header-resp-show480,
+  .header-resp-show768,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-hide {
+    display: block;
+  }
+
+  .main480,
+  .main768,
+  .main1024 {
+    display: none;
+  }
+
+  .main-resp-hide {
+    display: block;
+  }
+
+  .main-resp-hide {
+    display: block;
+    margin-left: calc(100vw - (100vw - 20%));
+  }
+
+  .main-head {
+    width: 749px;
+    height: 260px;
+    margin-left: 5%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 125%;
+  }
+
+  .secondary-head {
+    line-height: 50%;
+    margin-top: -5%;
+  }
+
+  .fixed-btn {
+    width: 15%;
+    height: 80px;
+
+    font-size: 1rem;
+
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .fixed-btn>span {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat, url('../Images/kisspng-wedding-ring.png') no-repeat;
+
+    background-size: 200px 280px, 350px 300px, 500px 480px;
+    background-position: 292px 100%, 549px 100%, 900px 55%;
+
+    background-color: #0D0D0D;
+  }
+
+  .foot-resp480,
+  .foot-resp768,
+  .foot-resp1024 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-info {
+    margin-top: 0;
+  }
+
+  .main-resp-hide {
+    display: block;
+    margin-left: calc(100vw - (100vw - 20%));
+  }
+
+  .main-head {
+    width: 749px;
+    height: 200px;
+    margin-left: 5%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 125%;
+  }
+
+  .secondary-head {
+    line-height: 50%;
+    margin-top: -5%;
+  }
+
+  .fixed-btn {
+    width: 15%;
+    height: 80px;
+
+    font-size: 1rem;
+
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .fixed-btn>span {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  .header-resp-show480,
+  .header-resp-show768,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-hide {
+    display: block;
+  }
+
+  .main480,
+  .main768,
+  .main1024 {
+    display: none;
+  }
+
+  .main-resp-hide {
+    display: block;
+  }
+
+  .expl-btn {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat, url('../Images/kisspng-wedding-ring.png') no-repeat;
+
+    background-size: 300px 380px, 500px 400px, 600px 580px;
+    background-position: 292px 95%, 550px 100%, 700px 55%;
+
+    background-color: #0D0D0D;
+
+    overflow: hidden;
+  }
+
+  .foot-resp480,
+  .foot-resp768,
+  .foot-resp1024 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-info {
+    margin-top: 0;
+  }
+
+  .foot-social {
+    margin-bottom: 30%;
+  }
+
+  .main-resp-hide {
+    display: block;
+    margin-left: calc(100vw - (100vw - 20%));
+  }
+
+  .secondary-head {
+    line-height: 50%;
+    margin-top: -5%;
+  }
+
+  .fixed-btn {
+    width: 15%;
+    height: 80px;
+
+    font-size: 1rem;
+
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .fixed-btn>span {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  .header-resp-show480,
+  .header-resp-show768,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-hide {
+    display: block;
+  }
+
+  .main480,
+  .main768,
+  .main1024 {
+    display: none;
+  }
+
+  .main-resp-hide {
+    display: block;
+  }
+
+  .expl-btn {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat;
+
+    background-size: 350px 430px, 500px 400px;
+    background-position: 15% 90%, 500px 75%;
+
+    background-color: #0D0D0D;
+  }
+
+  .foot-resp,
+  .foot-resp-hide,
+  .foot-resp480,
+  .foot-resp768 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-resp1024 {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease-in;
+    z-index: 1000;
+  }
+
+  .overlay.active {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .header,
+  .main {
+    margin-left: 5%;
+  }
+
+  .footer1024 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #404040;
+    width: 0%;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width .5s ease-in-out;
+  }
+
+  .footer1024.active {
+    width: 45%;
+  }
+
+  .flex-elem-align {
+    justify-content: center;
+  }
+
+  .foot-header1024 {
+    font: 700;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #E8A562;
+  }
+
+  .foot-header1024>h5 {
+    font: 700;
+    font-size: 2rem;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #E8A562;
+  }
+
+  .foot-link {
+    margin-bottom: 80%;
+    font-size: 1.5rem;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+  }
+
+  .foot-home {
+    margin-top: 10%;
+    color: #F2F2F2;
+  }
+
+  .foot-info {
+    margin-top: 0;
+  }
+
+  .foot-social {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15%;
+  }
+
+  .foot-social>div {
+    margin-right: 15%;
+  }
+
+  .foot-social>div:first-child {
+    margin-left: 15%;
+  }
+
+  .social-link {
+    cursor: pointer;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+
+  /*Header response 1024*/
+  .header-resp-hide,
+  .header-resp-show480,
+  .header-resp-show768 {
+    display: none;
+  }
+
+  .header-resp-show1024 {
+    display: block;
+  }
+
+  .header {
+    padding-top: 35px;
+    width: 100vw;
+  }
+
+  .header-item {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-right: 10%;
+  }
+
+  .search {
+    position: relative;
+    width: 100%;
+  }
+
+  #search {
+    height: 2.2rem;
+    padding-left: 15px;
+
+    font-size: 1rem;
+  }
+
+  .search div {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .input-icon {
+    width: 12%;
+    height: 2.2rem;
+    background: rgba(196, 196, 196, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-left: -5%;
+  }
+
+  .navbar>.row {
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
+  }
+
+  .navbar>.row>div {
+    padding: 15px;
+
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 129.5%;
+  }
+
+  /* Main response 1024 */
+  .main-resp-hide,
+  .main480,
+  .main768 {
+    display: none;
+  }
+
+  .main1024 {
+    display: block;
+  }
+
+  .main-head {
+    width: 100%;
+    height: 130px;
+    margin-left: 5%;
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 138%;
+  }
+
+  .secondary-head {
+    width: 100%;
+    height: 35px;
+    margin: 5% 0 0 5%;
+
+    font-size: 1.5rem;
+    line-height: 115%;
+  }
+
+  /* Buttons */
+  .expl-btn {
+    width: 20%;
+    height: 10%;
+    font-size: 1.5rem;
+  }
+
+  .fixed-btn {
+    width: 25%;
+    height: 80px;
+    right: 10%;
+    bottom: 10%;
+
+    font-size: 1rem;
+  }
+
+  .fixed-btn {
+    width: 25%;
+    height: 80px;
+    right: 10%;
+    bottom: 10%;
+
+    font-size: 1.2rem;
+  }
+
+  .fixed-btn > span {
+    font-size: 1.5rem;
+  }
+
+  .show-sidebar {
+    font-size: 1.9rem;
+    top: 3.5%;
+  }
+
+  .show-sidebar {
+    z-index: 1;
+    top: 3%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat;
+
+    background-size: 250px 330px, 350px 250px;
+    background-position: 20% 99%, 400px 80%;
+
+    background-color: #0D0D0D;
+  }
+
+  .foot-resp,
+  .foot-resp-hide,
+  .foot-resp480,
+  .foot-resp1024 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-resp768 {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease-in;
+    z-index: 1000;
+  }
+
+  .overlay.active {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .show-sidebar {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: block;
+    color: #F2F2F2;
+    cursor: pointer;
+  }
+
+  .header,
+  .main {
+    margin-left: 5%;
+  }
+
+  .footer768 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #404040;
+    width: 0%;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width .5s ease-in-out;
+  }
+
+  .footer768.active {
+    width: 45%;
+  }
+
+  .flex-elem-align {
+    justify-content: center;
+  }
+
+  .foot-header768 {
+    font: 700;
+    font-size: 1.5rem;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #E8A562;
+  }
+
+  .foot-header768>h5 {
+    font: 700;
+    font-size: 2rem;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #E8A562;
+  }
+
+  .foot-link {
+    margin-bottom: 80%;
+    font-size: 1.5rem;
+  }
+
+  .foot-home {
+    margin-top: 30%;
+    color: #F2F2F2;
+  }
+
+  .foot-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .foot-social>div {
+    margin-right: 15%;
+  }
+
+  .foot-social>div:first-child {
+    margin-left: 15%;
+  }
+
+  .social-link {
+    cursor: pointer;
+    margin: auto;
+    margin-top: 40%;
+    font-size: 1.5rem;
+  }
+
+  /*Header response 768*/
+  .header-resp-hide,
+  .header-resp-show480,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-show768 {
+    display: block;
+  }
+
+  .header {
+    padding-top: 35px;
+    width: 100vw;
+  }
+
+  .header-item {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-right: 10%;
+  }
+
+  .search {
+    position: relative;
+    width: 100%;
+  }
+
+  #search {
+    height: 1.9rem;
+    padding-left: 15px;
+
+    font-size: 1rem;
+  }
+
+  .search div {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .input-icon {
+    width: 12%;
+    height: 1.9rem;
+    background: rgba(196, 196, 196, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-left: -5%;
+  }
+
+  .navbar>.row {
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
+  }
+
+  .navbar>.row>div {
+    padding: 15px;
+
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 129.5%;
+  }
+
+  /* Main response 768 */
+  .main-resp-hide,
+  .main480,
+  .main1024 {
+    display: none;
+  }
+
+  .main768 {
+    display: block;
+  }
+
+  .main-head {
+    width: 100%;
+    height: 130px;
+    margin-left: 5%;
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 138%;
+  }
+
+  .secondary-head {
+    width: 100%;
+    height: 35px;
+    margin: 5% 0 0 5%;
+
+    font-size: 1.5rem;
+    line-height: 115%;
+  }
+
+  /* Buttons */
+  .expl-btn {
+    width: 20%;
+    height: 10%;
+    font-size: 1rem;
+  }
+
+  .fixed-btn {
+    width: 25%;
+    height: 80px;
+    right: 5%;
+    bottom: 5%;
+
+    font-size: 1rem;
+  }
+
+  .show-sidebar {
+    z-index: 1;
+    font-size: 1.9rem;
+    top: 3.5%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat;
+
+    background-size: 150px 180px;
+    background-position: 220px 95%;
+
+    background-color: #0D0D0D;
+  }
+
+  /* Responsive footer 480 */
+  .foot-resp,
+  .foot-resp-hide,
+  .foot-resp1024,
+  .foot-resp768,
+  .foot-resp480 {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  .foot-resp480 {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease-in;
+    z-index: 1000;
+  }
+
+  .overlay.active {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .show-sidebar {
+    top: 2%;
+  }
+
+  .header,
+  .main {
+    margin-left: 5%;
+  }
+
+  .footer480 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #404040;
+    width: 0%;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width .5s ease-in-out;
+  }
+
+  .footer480.active {
+    width: 45%;
+  }
+
+  .flex-elem-align {
+    justify-content: center;
+  }
+
+  .foot-header480 {
+    font: 700;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #E8A562;
+  }
+
+  .foot-header480>h5 {
+    font-size: 1.5rem;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #E8A562;
+  }
+
+  .foot-link {
+    margin-bottom: 80%;
+    font-size: 1rem;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+  }
+
+  .foot-home {
+    margin-top: 30%;
+    color: #F2F2F2;
+  }
+
+  .foot-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .foot-social>div {
+    margin-right: 15%;
+  }
+
+  .foot-social>div:first-child {
+    margin-left: 15%;
+  }
+
+  .social-link {
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+  /*Header response 480*/
+
+  .header-resp-hide,
+  .header-resp-show768,
+  .header-resp-show1024 {
+    display: none;
+  }
+
+  .header-resp-show480 {
+    display: block;
+  }
+
+  .header {
+    padding-top: 20px;
+    width: 100vw;
+  }
+
+  .header-item {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-right: 10%;
+  }
+
+  .search {
+    position: relative;
+    width: 100%;
+  }
+
+  #search {
+    height: 25px;
+    padding-left: 15px;
+    
+    font-size: 1rem;
+  }
+
+  .search div {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .input-icon {
+    width: 12%;
+    height: 25px;
+    background: rgba(196, 196, 196, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-left: -5%;
+  }
+
+  .navbar > .row {
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
+  }
+
+  .navbar>.row > div {
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Main response 480 */
+  .main-resp-hide,
+  .main768,
+  .main1024 {
+    display: none;
+  }
+
+  .main480 {
+    display: block;
+  }
+
+  .main-head {
+    width: 100%;
+    height: 100px;
+    margin-left: 5%;
+
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+  }
+
+  .secondary-head {
+    width: 100%;
+    height: 30px;
+    margin: 5% 0 0 5%;
+
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  /* Buttons */
+  .expl-btn {
+    width: 30%;
+    height: 70px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .fixed-btn {
+    width: 40%;
+    height: 80px;
+    right: 5%;
+    bottom: 5%;
+
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) and (max-height: 915px) {
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat;
+
+    background-size: 150px 180px, 250px 200px;
+    background-position: 10% 95%, 95% 75%;
+
+    background-color: #0D0D0D;
+  }
+
+  .expl-btn {
+    position: static;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 420px) and (max-height: 750px) {
+  body {
+    background: url('../Images/kisspng-bracelet-charms-pendants.png') no-repeat, url('../Images/kisspng-earring-jewellery.png') no-repeat;
+
+    background-size: 150px 180px, 250px 200px;
+    background-position: 8% 99%, 95% 75%;
+
+    background-color: #0D0D0D;
+  }
+
+  .main-head {
+    font-size: 1.2rem;
+  }
+
+  .secondary-head {
+    margin-top: 0;
+  }
+
+  .expl-btn {
+    position: static;
+    margin-top: 10%;
+    height: 5%;
+  }
+
+  .fixed-btn {
+    height: 70px;
+    font-size: .8rem;
+  }
+
+  .fixed-btn > span {
+    font-size: 1.2rem;
+  }
+}
